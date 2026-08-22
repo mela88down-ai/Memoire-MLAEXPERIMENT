@@ -1,0 +1,32 @@
+{% block title %}Questionnaire{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ static 'mla_experiment/style.css' }}">
+
+<div class="card">
+
+  <span class="badge">Questionnaire</span>
+
+  <h1>Questionnaire préliminaire</h1>
+
+  <p>
+    Indiquez pour chacune des affirmations suivantes à quel point elle vous correspond,
+    en choisissant le chiffre qui convient le mieux.
+  </p>
+
+  <p>
+    Utilisez l’échelle suivante :
+    <strong>1</strong> = extrêmement peu caractéristique de moi ;
+    <strong>2</strong> = modérément peu caractéristique de moi ;
+    <strong>3</strong> = légèrement peu caractéristique de moi ;
+    <strong>4</strong> = incertain(e) ;
+    <strong>5</strong> = légèrement caractéristique de moi ;
+    <strong>6</strong> = modérément caractéristique de moi ;
+    <strong>7</strong> = extrêmement caractéristique de moi.
+  </p>
+
+  {{ formfields }}
+
+</div>
+
+{{ next_button }}
+{% endblock %}

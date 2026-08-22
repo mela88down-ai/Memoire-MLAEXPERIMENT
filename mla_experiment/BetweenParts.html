@@ -1,0 +1,31 @@
+{% block title %}Fin de la première partie{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ static 'mla_experiment/style.css' }}">
+
+<div class="card">
+
+  <span class="badge">Transition</span>
+
+  <h1>Fin de la première partie !</h1>
+
+  <p>
+    Vous allez maintenant commencer la <strong>seconde partie</strong>.
+  </p>
+
+  <p>
+    L'exercice reste une tâche d'investissement. Vous disposez, à chaque période, d'un portefeuille
+    de <strong>10 €</strong> avec lequel vous choisissez combien investir dans l'actif risqué.
+  </p>
+
+  <div class="info-box">
+    <p>
+      ⚠️ Veuillez lire attentivement les règles de la nouvelle partie avant de continuer.
+      Les règles peuvent avoir changé.
+    </p>
+  </div>
+
+</div>
+
+{{ next_button }}
+{% endblock %}

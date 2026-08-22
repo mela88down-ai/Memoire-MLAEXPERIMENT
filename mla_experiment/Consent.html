@@ -1,0 +1,44 @@
+{% block title %}Consentement{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ static 'mla_experiment/style.css' }}">
+
+<div class="card">
+
+  <span class="badge">Consentement éclairé</span>
+
+  <h1>Formulaire de consentement</h1>
+
+  <p>
+    Avant de commencer, veuillez lire attentivement les informations ci-dessous et indiquer
+    si vous acceptez de participer à cette étude.
+  </p>
+
+  <h2>Nature de l'étude</h2>
+  <p>
+    Cette étude porte sur les décisions économiques. Votre participation consiste à réaliser
+    une tâche d'investissement dans laquelle vous prendrez une série de décisions financières
+    fictives.
+  </p>
+
+  <h2>Confidentialité</h2>
+  <p>
+    Vos réponses sont <strong>entièrement anonymes</strong>. Aucune information permettant
+    de vous identifier ne sera collectée ni conservée. Les données seront utilisées uniquement
+    à des fins de <strong>recherche académique</strong>.
+  </p>
+
+  <h2>Participation volontaire</h2>
+  <p>
+    Votre participation est <strong>volontaire</strong>. Vous pouvez interrompre l'étude
+    à tout moment sans conséquence.
+  </p>
+
+  <hr>
+
+  {{ formfields }}
+
+</div>
+
+{{ next_button }}
+{% endblock %}
