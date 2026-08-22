@@ -1,4 +1,3 @@
-# Memoire-MLAEXPERIMENT
 # MLA oTree Experiment
 
 This repository contains the oTree source code used for the experiment reported in the Master 2 thesis:
@@ -25,16 +24,15 @@ The repository contains the oTree implementation used for the experiment, includ
 - final results page;
 - CSS styling used in the participant interface.
 
-## Main files
+No participant-level data or local oTree database are included in this repository.
 
-- `settings.py` — oTree project and session configuration;
-- `requirements.txt` — Python dependencies;
-- `mla_experiment/__init__.py` — main experimental logic;
-- `mla_experiment/*.html` — participant-facing pages;
-- `static/mla_experiment/style.css` — interface styling.
+## Run the experiment
 
-## Data
+Open a Terminal and enter:
 
-No participant-level data are included in this repository.
-
-The repository contains only the experimental implementation used to generate the data analysed in the thesis.
+```bash
+git clone https://github.com/mela88down-ai/Memoire-MLAEXPERIMENT.git
+cd Memoire-MLAEXPERIMENT
+pip install -r requirements.txt
+export OTREE_PRODUCTION=1
+otree prodserver
